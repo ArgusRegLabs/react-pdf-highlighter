@@ -12,6 +12,7 @@ interface Props {
   errorMessage?: JSX.Element;
   children: (pdfDocument: PDFDocumentProxy) => JSX.Element;
   onError?: (error: Error) => void;
+  onLoad?: () => void;
   cMapUrl?: string;
   cMapPacked?: boolean;
 }
@@ -83,6 +84,7 @@ export class PdfLoader extends Component<Props, State> {
           cMapUrl,
           cMapPacked,
         }).promise.then((pdfDocument) => {
+          this.props.onLoad?.();
           this.setState({ pdfDocument });
         });
       })
