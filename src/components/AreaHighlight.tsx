@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Rnd, type Props as RndProps } from "react-rnd";
 import { getPageFromElement } from "../lib/pdfjs-dom";
 import styles from "../style/AreaHighlight.module.css";

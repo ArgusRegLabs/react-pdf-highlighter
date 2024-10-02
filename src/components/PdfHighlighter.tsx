@@ -1,4 +1,4 @@
-import { AnnotationMode, type  PDFDocumentProxy } from "pdfjs-dist";
+import { AnnotationMode, type PDFDocumentProxy } from "pdfjs-dist";
 import type { EventBus, PDFViewer } from "pdfjs-dist/legacy/web/pdf_viewer.mjs";
 import type { PDFViewerOptions } from "pdfjs-dist/types/web/pdf_viewer";
 import React, {
