@@ -10,6 +10,9 @@ export default defineConfig({
   server: {
     port: 3003,
   },
+  optimizeDeps: {
+    include: ['react/jsx-runtime']
+  },
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },
