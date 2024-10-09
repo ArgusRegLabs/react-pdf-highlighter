@@ -21,7 +21,6 @@
   "style": "./dist/style.css",
   "scripts": {
     "start": "npm run dev",
-    "prepare": "npm run build",
     "dev": "vite build && (cd ./example && vite)",
     "build": "npm run clean && npm run compile && vite build && npm run build:example",
     "compile": "tsc --noEmit",
